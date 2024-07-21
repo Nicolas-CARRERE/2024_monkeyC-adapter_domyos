@@ -1,0 +1,62 @@
+[ @file = "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc"; @line = 1; ]
+import Toybox.Lang;
+[ @file = "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc"; @line = 2; ]
+import Toybox.WatchUi;
+[ @file = "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc"; @line = 3; ]
+import Toybox.System;
+[ @file = "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc"; @line = 5; @position = 4; ]
+var position = 3;
+[ @file = "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc"; @line = 7; ]
+class adapter_domyosDelegate extends WatchUi.BehaviorDelegate{
+    [ @file = "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc"; @line = 7; ]
+    <init> {
+    }
+    [ @file = "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc"; @line = 7; ]
+    static
+    <init> {
+    }
+    [ @file = "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc"; @line = 9; ]
+    function initialize() as Void {
+_Users_nicolascarrere_Work_NCoDigiPro_Garmin_2024_sandbox_adapter_domyos_source_adapter_domyosDelegate_mc_9_26_11_4_start:
+[ "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc" 10 8 ]
+        %tmp.2 = getv ? :BehaviorDelegate;
+        %tmp.3 = getv function %tmp.2 :initialize;
+        invoke %tmp.2 %tmp.3();
+_Users_nicolascarrere_Work_NCoDigiPro_Garmin_2024_sandbox_adapter_domyos_source_adapter_domyosDelegate_mc_9_26_11_4_stop:
+    }
+    [ @file = "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc"; @line = 13; ]
+    function onKey(key) {
+_Users_nicolascarrere_Work_NCoDigiPro_Garmin_2024_sandbox_adapter_domyos_source_adapter_domyosDelegate_mc_13_24_20_4_start:
+[ "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc" 14 8 ]
+        [ "_Users_nicolascarrere_Work_NCoDigiPro_Garmin_2024_sandbox_adapter_domyos_source_adapter_domyosDelegate_mc_13_24_20_4_start" "_Users_nicolascarrere_Work_NCoDigiPro_Garmin_2024_sandbox_adapter_domyos_source_adapter_domyosDelegate_mc_13_24_20_4_stop" ]
+        %keyPushed.1 = local;
+        %tmp.1 = lgetv %key;
+        %tmp.2 = getv function %tmp.1 :getKey;
+        %tmp.3 = invoke %tmp.1 %tmp.2();
+        lputv %keyPushed.1 %tmp.3;
+[ "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc" 15 8 ]
+_Users_nicolascarrere_Work_NCoDigiPro_Garmin_2024_sandbox_adapter_domyos_source_adapter_domyosDelegate_mc_15_8_18_8_if_stmt:
+        %tmp.5 = lgetv %keyPushed.1;
+        bf %tmp.5 @_Users_nicolascarrere_Work_NCoDigiPro_Garmin_2024_sandbox_adapter_domyos_source_adapter_domyosDelegate_mc_15_8_18_8_if_end;
+_Users_nicolascarrere_Work_NCoDigiPro_Garmin_2024_sandbox_adapter_domyos_source_adapter_domyosDelegate_mc_15_8_18_8_if_true:
+_Users_nicolascarrere_Work_NCoDigiPro_Garmin_2024_sandbox_adapter_domyos_source_adapter_domyosDelegate_mc_15_23_18_8_start:
+[ "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc" 16 12 ]
+        %tmp.6 = getm $.Toybox.System;
+        %tmp.7 = getv function %tmp.6 :println;
+        %tmp.9 = lgetv %keyPushed.1;
+        invoke %tmp.6 %tmp.7(%tmp.9);
+[ "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc" 17 12 ]
+        %tmp.10 = true;
+        ret %tmp.10;
+_Users_nicolascarrere_Work_NCoDigiPro_Garmin_2024_sandbox_adapter_domyos_source_adapter_domyosDelegate_mc_15_23_18_8_stop:
+        goto @_Users_nicolascarrere_Work_NCoDigiPro_Garmin_2024_sandbox_adapter_domyos_source_adapter_domyosDelegate_mc_15_8_18_8_if_end;
+_Users_nicolascarrere_Work_NCoDigiPro_Garmin_2024_sandbox_adapter_domyos_source_adapter_domyosDelegate_mc_15_8_18_8_if_end:
+[ "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc" 19 8 ]
+        %tmp.11 = false;
+        ret %tmp.11;
+_Users_nicolascarrere_Work_NCoDigiPro_Garmin_2024_sandbox_adapter_domyos_source_adapter_domyosDelegate_mc_13_24_20_4_stop:
+    }
+}
+[ @file = "/Users/nicolascarrere/Work/NCoDigiPro/Garmin/2024_sandbox/adapter_domyos/source/adapter_domyosDelegate.mc"; @line = 1; ]
+<init> {
+}
